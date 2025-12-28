@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d1b1e;
+  color: #e0f2f1;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #052d29;
+  color: white;
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.site-header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #20c997;
+}
+
+.nav a {
+  color: #e0f2f1;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #20c997;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(120deg, #052d29, #0a3c35);
+}
+
+.hero-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  color: #20c997;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #b2dfdb;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #20c997;
+  color: #052d29;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hero-text .btn:hover {
+  background: #14a37f;
+  transform: translateY(-3px);
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Products */
+.products {
+  padding: 5rem 0;
+  background: #122826;
+  text-align: center;
+}
+
+.products h2 {
+  color: #20c997;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.product-grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #0d1b1e;
+  border: 1px solid #1e403d;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  color: #20c997;
+  margin-bottom: 0.5rem;
+}
+
+/* About */
+.about {
+  padding: 5rem 0;
+  background: #0a3c35;
+}
+
+.about-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.about-text h2 {
+  color: #20c997;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: #b2dfdb;
+  margin-bottom: 1rem;
+}
+
+/* Contact */
+.contact {
+  padding: 5rem 0;
+  background: #122826;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #20c997;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  color: #b2dfdb;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.contact-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #0d1b1e;
+  border: 1px solid #1e403d;
+  color: #e0f2f1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #20c997;
+  outline: none;
+}
+
+.contact-form button {
+  background: #20c997;
+  color: #052d29;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background: #14a37f;
+  transform: translateY(-3px);
+}
+
+.form-msg {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #20c997;
+}
+
+/* Footer */
+.footer {
+  background: #052d29;
+  color: #b2dfdb;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content, .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .nav {
+    font-size: 0.9rem;
+  }
+}
